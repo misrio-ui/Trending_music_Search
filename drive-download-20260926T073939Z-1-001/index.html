@@ -60,6 +60,7 @@ type="text"
 id="search-input"  
  placeholder="ค้นหาชื่อเพลง หรือ ศิลปิน..."   
 onkeyup="handleSearch(this.value)"  
+onkeydown="if (event.key === 'Enter') triggerSearch()"  
  class="w-full bg-neutral-100 text-neutral-900 placeholder-neutral-500 rounded-full pl-5 pr-11 py-2 font-medium focus:outline-none focus:ring-2 focus:ring-neutral-700 shadow-inner text-sm md:text-base"
  />  
  <button onclick="triggerSearch()" class="absolute right-3 top-1/2 -translate-y-1/2 text-purple-900 hover:text-purple-950 p-1">  
